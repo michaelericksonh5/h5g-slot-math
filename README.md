@@ -16,6 +16,24 @@ This plugin packages the research in `C:\Users\merickson\Claude Slot Math` into 
 - `scripts/validate-plugin.mjs`: local structural validation.
 - `DESKTOP.md`: Claude Desktop, Cowork, Code, and marketplace installation notes.
 
+## No Slash Commands Required
+
+Users can ask naturally after installing the plugin. Claude should load the
+relevant skills when the conversation mentions slot math, RTP, RMG, odds,
+payouts, reel strips, PAR sheets, simulations, jackpots, certification math,
+or dependent probabilities.
+
+Example natural prompts:
+
+- "Can you check whether this bonus RTP makes sense?"
+- "Are these paylines independent?"
+- "Prepare the RMG math proof and test it."
+- "Does this scatter probability need full reel-window enumeration?"
+- "Compare the Monte Carlo result to the theoretical model."
+
+Slash commands are optional manual overrides for targeted use. The
+`rules-install` skill is intentionally manual-only because it writes rule files.
+
 ## Test Locally
 
 ```bash
@@ -44,7 +62,7 @@ Most users should install this through Claude Desktop rather than starting the C
 - Plugins are available in Cowork and Code, not Chat.
 - Code supports plugins for local and SSH sessions; remote sessions do not use plugins.
 - Desktop users can install from Customize -> Plugins, from an organization marketplace, or from an uploaded plugin package.
-- A local upload package is available at `C:\Users\merickson\Documents\Claude_Plugins\h5g-slot-math-0.2.0.zip`.
+- A local upload package is available at `C:\Users\merickson\Documents\Claude_Plugins\h5g-slot-math-0.2.1.zip`.
 - See `DESKTOP.md` for the current workflow and marketplace notes.
 
 ## Natural-Language Invocation

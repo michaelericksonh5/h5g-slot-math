@@ -50,7 +50,13 @@ For broader team use, host the marketplace repository on GitHub or GitHub Enterp
 
 ## Use In Desktop
 
-After installation, invoke skills from the prompt with slash commands:
+After installation, users do not need slash commands for ordinary math work.
+They can ask naturally about slot math, RTP, RMG, odds, payouts, reel strips,
+Monte Carlo, PAR sheets, dependent probabilities, jackpots, or certification
+math. Claude should invoke the relevant H5G Slot Math skills automatically
+from the skill descriptions and `when_to_use` metadata.
+
+Slash commands remain available as explicit manual overrides:
 
 ```text
 /h5g-slot-math:probability-model
@@ -60,9 +66,9 @@ After installation, invoke skills from the prompt with slash commands:
 /h5g-slot-math:rules-install
 ```
 
-The `slot-math-core` skill is model-invoked background context and is not meant as the primary user command.
-
-Claude should also invoke the skills naturally when prompts mention math, RTP, RMG, odds, payouts, reel strips, simulations, PAR sheets, jackpots, or certification math. Users do not need to know the exact slash command for ordinary math discussion.
+The `slot-math-core` skill is model-invoked background context and is not meant
+as the primary user command. The `rules-install` skill is intentionally
+manual-only because it edits Claude rule files.
 
 ## Hook Expectations
 
